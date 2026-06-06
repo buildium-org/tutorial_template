@@ -1,5 +1,5 @@
 module tutorial_template
 
-go 1.25.5
+go 1.26.3
 
-require github.com/buildium-org/buildium_harness v0.0.0-20260110135825-745d73045362 // indirect
+require github.com/buildium-org/codium-harness v0.0.0-20260606210619-4617a245edc3
