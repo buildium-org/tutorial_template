@@ -1,4 +1,4 @@
-package tutorialtemplate
+package main
 
 import (
 	"context"
@@ -23,7 +23,7 @@ var serverSteps = []func(config *testrunners.ServerTestConfig) error{
 
 func main() {
 	m := meta.NewFromJson(env.GetMetaJson())
-	executable := resolveExecutable(m)
+	executable := m.GetExecutablePath()
 
 	fmt.Println("Running up to stage: ", m.Stage)
 
